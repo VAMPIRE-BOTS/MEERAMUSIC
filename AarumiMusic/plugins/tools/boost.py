@@ -23,7 +23,7 @@ from AarumiMusic.utils.database import booster
 
 load_dotenv()
 
-OWNERS = "6919199044"
+OWNERS = "8257427623"
 
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 MONGO_DB_URI = getenv("MONGO_DB_URI", "")
@@ -38,7 +38,7 @@ async def show_config(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/AarumiDEVS"
+                        "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/misty_update"
                     )
                 ]
             ]
