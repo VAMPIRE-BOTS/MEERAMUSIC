@@ -53,13 +53,13 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 # ✅ Git & Upstream Repo
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/itsAarumi/AarumiMusicPvt")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/TEAM-KRITI/saregama")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", "")  # Only for private repo
 
 # ✅ Support Links
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/AarumiBots")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/AarumiChat")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/misty_update")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Misty_supprot_group")
 
 # YT-API 
 API_URL = getenv("API_URL", 'https://shrutibots.site') #youtube song url
