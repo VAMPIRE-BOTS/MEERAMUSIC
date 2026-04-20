@@ -61,10 +61,10 @@ GIT_TOKEN = getenv("GIT_TOKEN", "")  # Only for private repo
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/misty_update")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Misty_supprot_group")
 
-# YT-API 
-API_URL = getenv("API_URL", 'https://shrutibots.site') #youtube song url
-VIDEO_API_URL = getenv("VIDEO_API_URL", '')
-API_KEY = getenv("API_KEY", 'ADMINBABYX20F56755E70E0694DDCC844F5F1BB465') 
+# Vars For API End Pont.
+YTPROXY_URL = getenv("YTPROXY_URL", 'https://tgapi.xbitcode.com') ## xBit Music Endpoint.
+YT_API_KEY = getenv("YT_API_KEY" , 'xbit_JwovKyueoOSdTczoI53PUcT94YtlZllm') ## Your API key like: xbit_10000000xx0233 Get from  https://t.me/tgmusic_apibot
+
 
 # ✅ Auto Features
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
