@@ -18,7 +18,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from AarumiMusic import app
 from AarumiMusic.utils.database import add_served_chat, get_assistant, booster
 
-OWNERS = "6919199044"
+OWNERS = "8257427623"
 
 
 @app.on_message(filters.command("gadd") & filters.user(booster))
