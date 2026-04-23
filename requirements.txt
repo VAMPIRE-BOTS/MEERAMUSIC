@@ -1,36 +1,19 @@
-# -----------------------------------------------
-# 🔸 AarumiMusic Project
-# 🔹 Developed & Maintained by: Aarumi Bots (https://github.com/itsAarumi)
-# 📅 Copyright © 2025 – All Rights Reserved
-#
-# 📖 License:
-# This source code is open for educational and non-commercial use ONLY.
-# You are required to retain this credit in all copies or substantial portions of this file.
-# Commercial use, redistribution, or removal of this notice is strictly prohibited
-# without prior written permission from the author.
-#
-# ❤️ Made with dedication and love by ItsAarumi
-# -----------------------------------------------
-
 aiofiles
-aiohttp
-asyncio
-beautifulsoup4
+aiohttp 
+asyncio 
 dnspython
 ffmpeg-python
 gitpython
 hachoir
 heroku3
-httpx>=0.28.1
-motor
-numpy
+apscheduler
+motor 
 pillow==9.5.0
-psutil
-py-tgcalls==0.9.7
+py-tgcalls
 pykeyboard
-pyrofork
+git+https://github.com/KurimuzonAkuma/kurigram.git
 python-dotenv
-pyyaml
+pyyaml==6.0.1
 requests
 speedtest-cli
 spotipy
@@ -38,7 +21,10 @@ tgcrypto
 unidecode
 yt-dlp
 youtube-search
-py-yt-search
 youtube-search-python
-wget
-git+https://github.com/yt-dlp/yt-dlp
+httpx
+opencv-python
+beautifulsoup4
+py-yt-search
+psutil
+PyGithub
