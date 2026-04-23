@@ -37,7 +37,6 @@ spotipy
 tgcrypto
 unidecode
 yt-dlp
-youtube-search
 py-yt-search
 youtube-search-python
 wget
