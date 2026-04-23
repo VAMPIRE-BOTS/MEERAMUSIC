@@ -38,6 +38,7 @@ tgcrypto
 unidecode
 yt-dlp
 youtube-search
+py-yt-search
 youtube-search-python
 wget
 git+https://github.com/yt-dlp/yt-dlp
