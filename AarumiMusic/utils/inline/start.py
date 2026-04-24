@@ -43,7 +43,7 @@ def private_panel(_):
             ),
         ],
         [
-            InlineKeyboardButton(text=_["S_B_2"], callback_data="shiv_Aarumi"),
+            InlineKeyboardButton(text=_["S_B_2"], callback_data="VAMPUBOTSADDA"),
             InlineKeyboardButton(
                 text="💌 ʏᴛ-ᴀᴘɪ",
                 callback_data="api_status"
