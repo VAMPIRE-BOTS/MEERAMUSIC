@@ -44,7 +44,7 @@
 ᴇɪᴛʜᴇʀ ʏᴏᴜ ᴄᴏᴜʟᴅ ʟᴏᴄᴧʟʟʏ ʜᴏsᴛ ᴏʀ ᴅᴇᴘʟᴏʏ ᴏɴ [ʜᴇʀᴏᴋᴜ](https://heroku.com)
 ### 💜 ʜᴇʀᴏᴋᴜ
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/itsAarumi/AarumiMusicPvt"> <img src="https://www.herokucdn.com/deploy/button.svg"></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/VAMPIRE-BOTS/MEERAMUSIC"> <img src="https://www.herokucdn.com/deploy/button.svg"></a></p>
 
 <br>
 
@@ -79,7 +79,7 @@ sudo apt-get install python3-pip -y
 sudo pip3 install -U pip
 curl -fssL
 https://deb.nodesource.com/setup_19.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm
-git clone https://github.com/itsAarumi/AarumiMusicPvt && cd AarumiMusicPvt
+git clone https://github.com/VAMPIRE-BOTS/MEERAMUSIC && cd MEERAMUSIC
 pip3 install -U -r requirements.txt
 bash setup
 sudo apt install tmux
