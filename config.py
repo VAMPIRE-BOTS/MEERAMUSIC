@@ -53,13 +53,13 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 # ✅ Git & Upstream Repo
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/TEAM-KRITI/saregama")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/VAMPIRE-BOTS/MEERAMUSIC")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", "")  # Only for private repo
 
 # ✅ Support Links
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/misty_update")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Misty_supprot_group")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/VAMPUBOTSADDA")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/VAMPUBOTSADDA")
 
 # Vars For API End Pont.
 YTPROXY_URL = getenv("YTPROXY_URL", 'https://tgapi.xbitcode.com') ## xBit Music Endpoint.
@@ -100,10 +100,10 @@ userstats = {}
 clean = []
 
 # ✅ UI Images
-START_IMG_URL = getenv("START_IMG_URL", "https://files.catbox.moe/7tg6zk.jpg")
-PING_IMG_URL = getenv("PING_IMG_URL", "https://files.catbox.moe/7tg6zk.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://i.ibb.co/P0bwT8w/x.jpg")
+PING_IMG_URL = getenv("PING_IMG_URL", "https://i.ibb.co/RG1B0F8L/x.jpg")
 PLAYLIST_IMG_URL = "https://files.catbox.moe/xp3phx.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/7tg6zk.jpg"
+STATS_IMG_URL = "https://i.ibb.co/P0bwT8w/x.jpg"
 TELEGRAM_AUDIO_URL = "https://files.catbox.moe/xp3phx.jpg"
 TELEGRAM_VIDEO_URL = "https://files.catbox.moe/xp3phx.jpg"
 STREAM_IMG_URL = "https://files.catbox.moe/xp3phx.jpg"
