@@ -1,7 +1,7 @@
 
 <h2 align="center">
   
-     ──「 ᴧᴧʀᴜᴍɪ ꭙ ᴍᴜꜱɪᴄ 」──
+     ──「  ᴍᴇᴇʀᴀ ꭙ ᴍᴜꜱɪᴄ 」──
 </h2>
 
 <p align="center"><a href="https://t.me/Swagger_Soul"><img src="https://files.catbox.moe/78wok7.jpg"></a></p>
