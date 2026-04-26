@@ -63,7 +63,7 @@ SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/VAMPUBOTSADDA")
 
         self.API_URL = getenv("API_URL", "https://pvtz.nexgenbots.xyz")
         self.VIDEO_API_URL = getenv("VIDEO_API_URL", "https://api.video.nexgenbots.xyz")
-        self.API_KEY = getenv("API_KEY", '30DxNexGenBots8f3e07') # Get this value from https://console.nexgenbots.xyz
+        self.API_KEY = getenv("API_KEY", "30DxNexGenBots8f3e07") # Get this value from https://console.nexgenbots.xyz
 
 # ✅ Auto Features
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
