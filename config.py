@@ -1,8 +1,8 @@
-# -----------------------------------------------
-# 🔸 AarumiMusic Project
-# 🔹 Developed & Maintained by: Aarumi Bots (https://github.com/itsAarumi)
-# 📅 Copyright © 2025 – All Rights Reserved
-# -----------------------------------------------
+# ----------------------------------------------- 
+# 🔸 AarumiMusic Project 
+# 🔹 Developed & Maintained by: Aarumi Bots (https://github.com/itsAarumi) 
+# 📅 Copyright © 2025 – All Rights Reserved 
+# ----------------------------------------------- 
 
 import re
 from os import getenv
@@ -53,7 +53,7 @@ GIT_TOKEN = getenv("GIT_TOKEN", "")
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/VAMPUBOTSADDA")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/VAMPUBOTSADDA")
 
-# ✅ FIXED API CONFIG (NO INDENT ERROR)
+# ✅ FIXED API CONFIG
 API_URL = getenv("API_URL", "https://pvtz.nexgenbots.xyz")
 VIDEO_API_URL = getenv("VIDEO_API_URL", "https://api.video.nexgenbots.xyz")
 API_KEY = getenv("API_KEY", "30DxNexGenBots8f3e07")
@@ -80,7 +80,7 @@ STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
 
-# ✅ Runtime Storage
+# ✅ Runtime Storage (Using dynamic filters to avoid import issues)
 BANNED_USERS = filters.user()
 adminlist = {}
 lyrical = {}
@@ -107,7 +107,6 @@ SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/xp3phx.jpg"
 
 # ✅ URL Validation
 if SUPPORT_CHANNEL and not re.match(r"(?:http|https)://", SUPPORT_CHANNEL):
-    raise SystemExit("[ERROR] - Your SUPPORT_CHANNEL URL is invalid.")
-
+    print("[WARNING] - Your SUPPORT_CHANNEL URL is invalid.")
 if SUPPORT_CHAT and not re.match(r"(?:http|https)://", SUPPORT_CHAT):
-    raise SystemExit("[ERROR] - Your SUPPORT_CHAT URL is invalid.")
+    print("[WARNING] - Your SUPPORT_CHAT URL is invalid.")
