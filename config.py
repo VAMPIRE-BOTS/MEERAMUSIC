@@ -1,8 +1,16 @@
-# ----------------------------------------------- 
-# 🔸 AarumiMusic Project 
-# 🔹 Developed & Maintained by: Aarumi Bots (https://github.com/itsAarumi) 
-# 📅 Copyright © 2025 – All Rights Reserved 
-# ----------------------------------------------- 
+# -----------------------------------------------
+# 🔸 AarumiMusic Project
+# 🔹 Developed & Maintained by: Aarumi Bots (https://github.com/itsAarumi)
+# 📅 Copyright © 2025 – All Rights Reserved
+#
+# 📖 License:
+# This source code is open for educational and non-commercial use ONLY.
+# You are required to retain this credit in all copies or substantial portions of this file.
+# Commercial use, redistribution, or removal of this notice is strictly prohibited
+# without prior written permission from the author.
+#
+# ❤️ Made with dedication and love by ItsAarumi
+# -----------------------------------------------
 
 import re
 from os import getenv
@@ -17,7 +25,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
 
 # ✅ Basic Config
-API_ID = int(getenv("API_ID", "0"))
+API_ID = int(getenv("API_ID", ""))
 API_HASH = getenv("API_HASH", "")
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 COOKIES = getenv("COOKIES", None)
@@ -27,13 +35,13 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", "")
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 54000))
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "54000"))
 
-# ✅ Limits Conversion
+# ✅ Limits Conversion (after defining time_to_seconds)
 DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
 SONG_DOWNLOAD_DURATION_LIMIT = int(time_to_seconds(f"{SONG_DOWNLOAD_DURATION}:00"))
 
 # ✅ Owner & Bot Identity
-LOGGER_ID = int(getenv("LOGGER_ID", "0"))
-OWNER_ID = int(getenv("OWNER_ID", "0"))
+LOGGER_ID = int(getenv("LOGGER_ID", ""))
+OWNER_ID = int(getenv("OWNER_ID", ""))
 OWNER_USERNAME = getenv("OWNER_USERNAME", "Swagger_Soul")
 BOT_USERNAME = getenv("BOT_USERNAME", "")
 
@@ -47,16 +55,16 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # ✅ Git & Upstream Repo
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/VAMPIRE-BOTS/MEERAMUSIC")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
-GIT_TOKEN = getenv("GIT_TOKEN", "")
+GIT_TOKEN = getenv("GIT_TOKEN", "")  # Only for private repo
 
 # ✅ Support Links
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/VAMPUBOTSADDA")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/VAMPUBOTSADDA")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/AarumiBots")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/AarumiChat")
 
-# ✅ FIXED API CONFIG
-API_URL = getenv("API_URL", "https://pvtz.nexgenbots.xyz")
-VIDEO_API_URL = getenv("VIDEO_API_URL", "https://api.video.nexgenbots.xyz")
-API_KEY = getenv("API_KEY", "30DxNexGenBots8f3e07")
+# YT-API 
+API_URL = getenv("API_URL", 'https://shrutibots.site') #youtube song url
+VIDEO_API_URL = getenv("VIDEO_API_URL", '')
+API_KEY = getenv("API_KEY", 'ADMINBABYX20F56755E70E0694DDCC844F5F1BB465') 
 
 # ✅ Auto Features
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -80,7 +88,7 @@ STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
 
-# ✅ Runtime Storage (Using dynamic filters to avoid import issues)
+# ✅ Runtime Storage
 BANNED_USERS = filters.user()
 adminlist = {}
 lyrical = {}
@@ -92,10 +100,10 @@ userstats = {}
 clean = []
 
 # ✅ UI Images
-START_IMG_URL = getenv("START_IMG_URL", "https://i.ibb.co/P0bwT8w/x.jpg")
-PING_IMG_URL = getenv("PING_IMG_URL", "https://i.ibb.co/RG1B0F8L/x.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://files.catbox.moe/7tg6zk.jpg")
+PING_IMG_URL = getenv("PING_IMG_URL", "https://files.catbox.moe/7tg6zk.jpg")
 PLAYLIST_IMG_URL = "https://files.catbox.moe/xp3phx.jpg"
-STATS_IMG_URL = "https://i.ibb.co/P0bwT8w/x.jpg"
+STATS_IMG_URL = "https://files.catbox.moe/7tg6zk.jpg"
 TELEGRAM_AUDIO_URL = "https://files.catbox.moe/xp3phx.jpg"
 TELEGRAM_VIDEO_URL = "https://files.catbox.moe/xp3phx.jpg"
 STREAM_IMG_URL = "https://files.catbox.moe/xp3phx.jpg"
@@ -107,6 +115,8 @@ SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/xp3phx.jpg"
 
 # ✅ URL Validation
 if SUPPORT_CHANNEL and not re.match(r"(?:http|https)://", SUPPORT_CHANNEL):
-    print("[WARNING] - Your SUPPORT_CHANNEL URL is invalid.")
+    raise SystemExit("[ERROR] - Your SUPPORT_CHANNEL URL is invalid. Must start with https://")
+
 if SUPPORT_CHAT and not re.match(r"(?:http|https)://", SUPPORT_CHAT):
-    print("[WARNING] - Your SUPPORT_CHAT URL is invalid.")
+    raise SystemExit("[ERROR] - Your SUPPORT_CHAT URL is invalid. Must start with https://")
+
