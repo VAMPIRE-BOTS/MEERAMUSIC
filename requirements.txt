@@ -7,6 +7,7 @@ gitpython
 hachoir
 heroku3
 apscheduler
+numpy>=1.24.0
 motor 
 pillow==9.5.0
 py-tgcalls==2.2.11
