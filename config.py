@@ -53,7 +53,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 # ✅ Git & Upstream Repo
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/VAMPIRE-BOTS/MEERAMUSIC")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/VAMPIRE-BOTS/MEERAMUSIC.git")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", "")  # Only for private repo
 
@@ -62,9 +62,8 @@ SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/AarumiBots")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/AarumiChat")
 
 # YT-API 
-API_URL = getenv("API_URL", 'https://shrutibots.site') #youtube song url
-VIDEO_API_URL = getenv("VIDEO_API_URL", '')
-API_KEY = getenv("API_KEY", 'ADMINBABYX20F56755E70E0694DDCC844F5F1BB465') 
+YTPROXY_URL = getenv("YTPROXY_URL", 'https://tgapi.xbitcode.com') ## xBit Music Endpoint.
+YT_API_KEY = getenv("YT_API_KEY" , 'xbit_l0fIWpT9HFNqYQy_UW2gvgVAx32cPYtN' ) ## Get your api key from https://music.xbitcode.com
 
 # ✅ Auto Features
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
